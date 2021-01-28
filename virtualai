@@ -1,0 +1,9 @@
+
+        elif 'send a mail' in statement:
+            try:
+                speak("What should I say?")
+                content = takeCommand()
+                speak("whom should i send")
+                to = input()
+                sendEmail(to, content)
+                speak("email sent successfully")
